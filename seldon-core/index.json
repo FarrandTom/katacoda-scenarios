@@ -1,15 +1,9 @@
 {
-    "title": "Deploying Kubeflow",
-    "description": "Learn how to deploy Kubeflow to a Kubernetes cluster",
+    "title": "Deploying Seldon Core",
+    "description": "Learn how to deploy Seldon Core to a Kubernetes cluster",
     "details": {
       "steps": [
-        { "title": "What is Kubeflow?", "text": "step-whatiskubeflow.md" },
-        { "title": "Deploying Kubeflow", "text": "step-deploying-kubeflow.md" },
-        { "title": "Example TensorFlow Application", "text": "step-example-tfjob.md" },
-        { "title": "Deploy TensorFlow Job (TFJob)", "text": "step-deploying-tfjob.md" },
-        { "title": "View Job Progress and Results", "text": "step-viewing-tfjob.md" },
-        { "title": "Deploy JupyterHub", "text": "jupyter.md" },
-        { "title": "Access Model Server", "text": "model.md" }
+        { "title": "What is Seldon Core?", "text": "step-what-is-seldon.md" }
       ],
       "intro": {
         "text": "intro.md",
@@ -18,21 +12,13 @@
       },
       "finish": {
         "text": "finish.md"
-      },
-      "assets": {
-        "host01": [
-          {"file": "example.yaml", "target": "/root"},
-          {"file": "model-client-job.yaml", "target": "/root"}
-        ]
       }
     },
     "environment": {
-      "uilayout": "terminal",
-      "showdashboard": true,
-      "dashboards": [{"name": "Jupyterhub", "port": 80}, {"name": "Dashboard", "port": 30080}]
+      "uilayout": "terminal"
     },
     "backend": {
-      "imageid": "kubernetes-kubeflow",
+      "imageid": "kubernetes-cluster:1.18",
       "port": 80
     }
   }
