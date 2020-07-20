@@ -6,7 +6,8 @@
         { "title": "What is Seldon Core?", "text": "step-what-is-seldon.md" }
       ],
       "intro": {
-        "text": "intro.md"
+        "text": "intro.md",
+        "code": "foreground-init.sh"
       },
       "finish": {
         "text": "finish.md"
