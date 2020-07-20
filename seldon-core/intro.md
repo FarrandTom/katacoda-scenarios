@@ -9,6 +9,7 @@ By the end of this hands-on tutorial you will understand:
 - How to install Seldon
 - How to deploy machine learning models at scale on Kubernetes
 
-Source for Seldon Core: https://github.com/SeldonIO/seldon-core
+## Sources 
+Seldon Core: https://github.com/SeldonIO/seldon-core
 
-Source for this scenario: https://github.com/FarrandTom/katacoda-scenarios/tree/master/seldon-core
+This scenario: https://github.com/FarrandTom/katacoda-scenarios/tree/master/seldon-core
