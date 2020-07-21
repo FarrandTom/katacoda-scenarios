@@ -1,14 +1,14 @@
-## Introduction
+## Introduction 👩‍💻
 In this scenario, you will deploy [Seldon Core](https://docs.seldon.io/projects/seldon-core/en/v1.1.0/) to a Kubernetes environment. 
 
 You will then use Seldon Core to deploy and test a machine learning classifier- pre-trained on the Scikit-Learn [Iris dataset](https://scikit-learn.org/stable/auto_examples/datasets/plot_iris_dataset.html).
 
-## Pre-requisites
+## Pre-requisites ☁
 An understanding of [Kubernetes](https://kubernetes.io/) terminology and concepts will be helpful! 
 
-## What is Seldon Core?
+## What is Seldon Core? 🤖
 
-Seldon Core is an open source platform to deploy your machine learning models at scale on Kubernetes. 
+Seldon Core is an open source platform to deploy your machine learning models at scale on Kubernetes.  
 
 Seldon Core makes it simple to convert machine learning models into production-grade microservices following three steps:
 1. **Containerise**: Model binaries from popular frameworks (Scikit-Learn, Tensorflow, XGBoost) are readily containerised thanks to pre-built model servers. 
@@ -18,4 +18,4 @@ Custom models are supported using language wrappers (Python, Java) allowing you 
 
 ![](seldon-core/assets/seldon_core_overview.png)
 
-Tutorial authored by Tom Farrand. Source [here](https://github.com/FarrandTom/katacoda-scenarios/tree/master/seldon-core).
+✍️ Tutorial authored by Tom Farrand. Source [here](https://github.com/FarrandTom/katacoda-scenarios/tree/master/seldon-core).
