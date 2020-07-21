@@ -1,4 +1,4 @@
-At this point, you have Seldon Core up and running. There is now only one more step prior to deploying your first machine learning model onto Seldon. 
+At this point, you have Seldon Core up and running. There is now only one more step prior to deploying your first machine learning model onto Seldon. 🤓
 
 You now need to ensure that any models deployed to Seldon will be accessible to users. You will set up a simple API gateway to control ingress to your cluster. To do this you will use the [Ambassador stack](https://www.getambassador.io/). 
 
@@ -25,3 +25,5 @@ Forwarding from 127.0.0.1:8003 -> 8080
 Forwarding from [::1]:8003 -> 8080
 ```
 This listener will wait for ingress traffic to forward on from port `8003` to the pod port of `8080`. For the rest of the tutorial you will now work in **Terminal 2**. It should already be open and ready to use as a separate tab at the top of your terminal environment. 
+
+🤟

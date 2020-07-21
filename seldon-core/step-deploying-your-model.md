@@ -1,4 +1,4 @@
-You will now deploy a machine learning classifier to your freshly setup Seldon environment!
+You will now deploy a machine learning classifier to your freshly setup Seldon environment! 🤩
 
 At this point you should be working in **Terminal 2**, with your port forwarding listener running in the original terminal. 
 
@@ -29,7 +29,7 @@ spec:
 
 In the config file above you are creating a custom resource of `kind: SeldonDeployment`. You are making use of a `predictor` component which will pull and run the `seldonio/sklearn-iris:0.1` model. Finally, under the `graph` section you are creating a REST model endpoint called `sklearn-iris-predictor`. 
 
-This config has been pre-uploaded to your environment (you can view and edit it with `nano sklearn_iris_deployment.yaml`).
+This config has been pre-uploaded to your environment (you can view and edit it with `nano sklearn_iris_deployment.yaml`). ✅
 
 To create the specified Seldon deployment run:
 `kubectl create -f sklearn_iris_deployment.yaml`{{execute}}
@@ -41,6 +41,7 @@ When the deployment is ready you should see a similar message: `deployment "seld
 
 You can view your new deployment pods with: `kubectl get pods -n seldon`{{execute}}
 
-Congratulations you have deployed your first Seldon model! 
+Congratulations you have deployed your first Seldon model! 🥳
 
 Next, you'll try testing it...
+

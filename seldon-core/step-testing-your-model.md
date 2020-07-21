@@ -1,4 +1,4 @@
-You can now test our model deployment. 
+You can now test our model deployment. ⚠️
 
 The model you have deployed is a simple classifier based upon the Scikit-Learn Iris flower dataset. Based upon various measurements of everyone's favourite flower your classifier will distinguish between 3 different types of iris (Setosa, Versicolour, and Virginica). 
 
@@ -10,3 +10,5 @@ This should return a response which confirms the classification of your iris alo
 This example suggesting that the iris is a Setosa with 95% confidence. 
 
 If you switch back to your original Terminal you should see the request traffic being picked up by your port-forwarding listener (`Handling connection for 8003`). 
+
+🤘

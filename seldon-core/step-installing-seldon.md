@@ -1,4 +1,4 @@
-Next, you will install Seldon Core Operator. The Seldon Core Operator is responsible for taking the machine learning deployment you will specify and managing the underlying Kubernetes resources.
+Next, you will install Seldon Core Operator. The Seldon Core Operator is responsible for taking the machine learning deployment you will specify and managing the underlying Kubernetes resources. 😎
 
 Create a couple of namespaces.
 1. `kubectl create namespace seldon`{{execute}}
@@ -17,3 +17,5 @@ You can watch the status of the deployment by running:
 
 Once the Seldon Core pods are up and running your prompt will return, and you will see:
 `deployment "seldon-controller-manager" successfully rolled out` 
+
+👌
