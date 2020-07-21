@@ -5,7 +5,6 @@
     "time": "15 minutes",
     "details": {
       "steps": [
-        { "title": "What is Seldon Core?", "text": "step-what-is-seldon.md" },
         { "title": "Installing Seldon", "text": "step-installing-seldon.md" },
         { "title": "Configuring Ingress", "text": "step-configuring-ingress.md" },
         { "title": "An Example Model", "text": "step-example-model.md" },
