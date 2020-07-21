@@ -5,7 +5,7 @@
     "time": "20 minutes",
     "details": {
       "steps": [
-        { "title": "Installing Helm", "text": "step-installing-helm.md" },
+        { "title": "Installing Helm ⛴", "text": "step-installing-helm.md" },
         { "title": "Installing Seldon", "text": "step-installing-seldon.md" },
         { "title": "Configuring Ingress", "text": "step-configuring-ingress.md" },
         { "title": "Deploying Your Model", "text": "step-deploying-your-model.md" },
