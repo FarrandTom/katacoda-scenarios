@@ -1,4 +1,4 @@
-You can now test our model deployment. ⚠️
+You can now test your model deployment. ⚠️
 
 The model you have deployed is a simple classifier based upon the Scikit-Learn Iris flower dataset. Based upon various measurements of everyone's favourite flower your classifier will distinguish between 3 different types of iris (Setosa, Versicolour, and Virginica). 
 
