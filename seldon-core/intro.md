@@ -18,4 +18,4 @@ Custom models are supported using language wrappers (Python, Java) allowing you 
 
 ![](seldon-core/assets/seldon_core_overview.png)
 
-Authored by Tom Farrand. Source [here](https://github.com/FarrandTom/katacoda-scenarios/tree/master/seldon-core).
+Tutorial authored by Tom Farrand. Source [here](https://github.com/FarrandTom/katacoda-scenarios/tree/master/seldon-core).
