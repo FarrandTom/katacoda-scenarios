@@ -4,7 +4,8 @@ Create a couple of namespaces.
 1. `kubectl create namespace seldon`{{execute}}
 2. `kubectl create namespace seldon-system`{{execute}}
 
-The `seldon` namespace will hold your machine learning deployment and networking pods used for traffic ingress. `seldon-system` will contain the adminstration and management pods used by Seldon Core. 
+The `seldon` namespace will hold your machine learning deployment and networking pods used for traffic ingress. `seldon-system` will contain the adminstration and management pods used by Seldon Core. Next you will update the `kubeconfig` for the `seldon` namespace:
+`kubectl config set-context $(kubectl config current-context) --namespace=seldon`{{execute}}
 
 You can now use Helm to install Seldon Core: 
 `helm install seldon-core seldon-core-operator --repo https://storage.googleapis.com/seldon-charts --set ambassador.enabled=true --set usageMetrics.enabled=true --namespace seldon-system`{{execute}}
