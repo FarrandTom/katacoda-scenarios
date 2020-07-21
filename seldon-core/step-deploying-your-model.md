@@ -39,6 +39,8 @@ Again, you can watch the rollout of the model deployment:
 
 When the deployment is ready you should see a similar message: `deployment "seldon-92a927e5e90d7602e08ba9b9304f70e8" successfully rolled out`
 
+You can view your new deployment pods with: `kubectl get pods -n seldon`{{execute}}
+
 Congratulations you have deployed your first Seldon model! 
 
 Next, we'll try testing it...
