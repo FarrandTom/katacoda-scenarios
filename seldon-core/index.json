@@ -29,7 +29,7 @@
       "terminals": [{"name": "Terminal 2", "target": "host01"}]
     },
     "backend": {
-      "imageid": "kubernetes-cluster-running:1.18",
+      "imageid": "kubernetes-cluster-running",
       "port": 80
     }
   }
