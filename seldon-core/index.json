@@ -8,7 +8,6 @@
         { "title": "Installing Helm", "text": "step-installing-helm.md" },
         { "title": "Installing Seldon", "text": "step-installing-seldon.md" },
         { "title": "Configuring Ingress", "text": "step-configuring-ingress.md" },
-        { "title": "An Example Model", "text": "step-example-model.md" },
         { "title": "Deploying Your Model", "text": "step-deploying-your-model.md" },
         { "title": "Testing Your Model", "text": "step-testing-your-model.md" }
       ],
@@ -18,6 +17,11 @@
       },
       "finish": {
         "text": "finish.md"
+      },
+      "assets": {
+        "host01": [
+            {"file": "sklearn_iris_deployment.yaml", "target": "~"}
+        ]
       }
     },
     "environment": {
