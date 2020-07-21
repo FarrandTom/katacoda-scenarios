@@ -27,7 +27,7 @@ spec:
     replicas: 1
 ```
 
-Note that you are creating a custom resource of `kind: SeldonDeployment`. While making use of a `predictor` component which will pull and run the `seldonio/sklearn-iris:0.1` model. Finally, under the `graph` section you are creating a REST model endpoint called `sklearn-iris-predictor`. 
+In the config file above you are creating a custom resource of `kind: SeldonDeployment`. You are making use of a `predictor` component which will pull and run the `seldonio/sklearn-iris:0.1` model. Finally, under the `graph` section you are creating a REST model endpoint called `sklearn-iris-predictor`. 
 
 This config has been pre-uploaded to your environment (you can view and edit it with `nano sklearn_iris_deployment.yaml`).
 
@@ -36,3 +36,9 @@ To create the specified Seldon deployment run:
 
 Again, you can watch the rollout of the model deployment:
 `kubectl rollout status deploy/$(kubectl get deploy -l seldon-deployment-id=seldon-deployment-example -o jsonpath='{.items[0].metadata.name}')`{{execute}}
+
+When the deployment is ready you should see a similar message: `deployment "seldon-92a927e5e90d7602e08ba9b9304f70e8" successfully rolled out`
+
+Congratulations you have deployed your first Seldon model! 
+
+Next, we'll try testing it...

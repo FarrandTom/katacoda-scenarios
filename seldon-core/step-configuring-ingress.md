@@ -11,7 +11,7 @@ Make sure everything is up-to-date:
 You can now install Ambassador in the `seldon` namespace you created earlier: 
 `helm install ambassador datawire/ambassador --set image.repository=quay.io/datawire/ambassador --set enableAES=false --set crds.keep=false --namespace seldon`{{execute}}
 
-As before, you can use Kubernetes to watch the rollout of your deployment: 
+As before, you can use Kubernetes to watch the rollout of your deployment (this can take a couple of minutes to get up and running): 
 `kubectl rollout status deployment.apps/ambassador -n seldon`{{execute}}
 
 Once the Ambassador pods have been deployed and are running, you will run the following command:
