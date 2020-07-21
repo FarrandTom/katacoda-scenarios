@@ -20,7 +20,7 @@ Once the Ambassador pods have been deployed and are running, you will run the fo
 This will forward traffic from the local `8003` port to port `8080` of the Ambassador ingress gateway pod. Ambassador will then route this traffic to your Seldon deployments.
 
 The ouput of this command should look similar to the below:
-```{{execute}}
+```
 Forwarding from 127.0.0.1:8003 -> 8080
 Forwarding from [::1]:8003 -> 8080
 ```
