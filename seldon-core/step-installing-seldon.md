@@ -9,6 +9,8 @@ The `seldon` namespace will hold your machine learning deployment and networking
 You can now use Helm to install Seldon Core: 
 `helm install seldon-core seldon-core-operator --repo https://storage.googleapis.com/seldon-charts --set ambassador.enabled=true --set usageMetrics.enabled=true --namespace seldon-system`{{execute}}
 
+This command grabs the Seldon Core Helm chart from the specified repository `--repo https://storage.googleapis.com/seldon-charts`, and enables Seldon for use with Ambassador `--set ambassador.enabled=true` (more on that later!).
+
 You can watch the status of the deployment by running: 
 `kubectl rollout status deploy/seldon-controller-manager -n seldon-system`{{execute}}
 

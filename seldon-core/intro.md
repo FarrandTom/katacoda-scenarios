@@ -6,8 +6,6 @@ You will then use Seldon Core to deploy and test a machine learning classifier- 
 ## Pre-requisites
 An understanding of [Kubernetes](https://kubernetes.io/) terminology and concepts will be helpful! 
 
-😀 😃 😄
-
 ## What is Seldon Core?
 
 Seldon Core is an open source platform to deploy your machine learning models at scale on Kubernetes. 
