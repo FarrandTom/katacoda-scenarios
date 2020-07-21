@@ -2,7 +2,7 @@
     "title": "Deploying Seldon Core",
     "description": "Learn how to deploy Seldon Core to a Kubernetes cluster",
     "difficulty": "Easy",
-    "time": "15 minutes",
+    "time": "20 minutes",
     "details": {
       "steps": [
         { "title": "Installing Helm", "text": "step-installing-helm.md" },

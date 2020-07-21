@@ -12,9 +12,15 @@ You can now install Ambassador in the `seldon` namespace you created earlier:
 `helm install ambassador datawire/ambassador --set image.repository=quay.io/datawire/ambassador --set enableAES=false --set crds.keep=false --namespace seldon`{{execute}}
 
 As before, you can use Kubernetes to watch the rollout of your deployment: 
-`kubectl rollout status deployment.apps/ambassador`
+`kubectl rollout status deployment.apps/ambassador -n seldon`{{execute}}
 
 Once the Ambassador pods have been deployed and are running, you will run the following command:
 `kubectl port-forward $(kubectl get pods -n seldon -l app.kubernetes.io/name=ambassador -o jsonpath='{.items[0].metadata.name}') -n seldon 8003:8080`{{execute}}
 
 This will forward traffic from the local `8003` port to port `8080` of the Ambassador ingress gateway pod. Ambassador will then route this traffic to your Seldon deployments.
+
+The ouput of this command should look similar to the below:
+```{{execute}}
+Forwarding from 127.0.0.1:8003 -> 8080
+Forwarding from [::1]:8003 -> 8080
+```
