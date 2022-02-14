@@ -1,8 +1,10 @@
-# Learn how to download the Dataiku artefact
+# Downloading the Dataiku artefact
 
 In this tutorial you will be developing a Seldon model server for a Dataiku saved PMML model. Not only that, but your final Seldon server will also be totally resuable- allowing you to apply it to any other Dataiku PMML models!
 
 In this step of the tutorial you will work on developing the Python code to download the model from a storage bucket and load it into memory.
+
+## Setting up the Code
 
 Start by creating a new Python file titled `RandomForest.py`:
 
@@ -49,6 +51,8 @@ class RandomForest(object):
 
         self.ready = True
 ```
+
+## Understanding the Code
 
 The structure of `RandomForest.py` thus far can be broken down into the following pieces:
 
