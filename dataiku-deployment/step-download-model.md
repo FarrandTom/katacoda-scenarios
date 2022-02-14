@@ -8,6 +8,6 @@ This model has been uploaded to a Google storage bucket where it can easily be p
 ```(bash)
 wget https://storage.googleapis.com/tom-seldon-examples/katacoda-scenarios/dataiku-model/high-revenue-prediction.pmml
 
-```
+```{{execute}}
 
 You can validate that it has been successfully downloaded into your environment by clicking the refresh button in the top left of the editor pane.
