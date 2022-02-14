@@ -6,12 +6,12 @@
   "details": {
     "steps": [
       {
-        "title": "Download the Dataiku Model",
-        "text": "step-download-model.md"
+        "title": "Setting up Python: Loading the model",
+        "text": "step-loading-model.md"
       },
       {
-        "title": "Setup Python",
-        "text": "step-setup-python.md"
+        "title": "Setting up Python: Generating Predictions",
+        "text": "step-generating-predictions.md"
       },
       {
         "title": "Adding Requirements",
@@ -42,6 +42,6 @@
     "uilayout": "editor-terminal"
   },
   "backend": {
-    "imageid": "ubuntu:2004"
+    "imageid": "python:3.8"
   }
 }
