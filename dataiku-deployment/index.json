@@ -2,20 +2,32 @@
   "title": "Deploying a Dataiku Model with Seldon",
   "description": "This tutorial will walk through how to create a Seldon deployment using a Dataiku generated model in the PMML format.",
   "difficulty": "Intermediate",
-  "time": "3 minutes",
+  "time": "20 minutes",
   "details": {
     "steps": [
       {
-        "title": "Step 1",
-        "text": "step1.md"
+        "title": "Download the Dataiku Model",
+        "text": "step-download-model.md"
       },
       {
-        "title": "Step 2",
-        "text": "step2.md"
+        "title": "Setup Python",
+        "text": "step-setup-python.md"
       },
       {
-        "title": "Step 3",
-        "text": "step3.md"
+        "title": "Adding Requirements",
+        "text": "step-adding-requirements.md"
+      },
+      {
+        "title": "Creating Your Dockerfile",
+        "text": "step-creating-dockerfile.md"
+      },
+      {
+        "title": "Building Your Model Image",
+        "text": "step-building-model-image.md"
+      },
+      {
+        "title": "Deploy Onto Seldon!",
+        "text": "step-deploy-onto-seldon.md"
       }
     ],
     "intro": {
