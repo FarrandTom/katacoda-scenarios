@@ -1,7 +1,7 @@
 {
-  "title": "New Scenario Template",
-  "description": "A simple scenario example.",
-  "difficulty": "Beginner",
+  "title": "Deploying a Dataiku Model with Seldon",
+  "description": "This tutorial will walk through how to create a Seldon deployment using a Dataiku generated model in the PMML format.",
+  "difficulty": "Intermediate",
   "time": "3 minutes",
   "details": {
     "steps": [
@@ -27,7 +27,7 @@
     }
   },
   "environment": {
-    "uilayout": "terminal"
+    "uilayout": "editor-terminal"
   },
   "backend": {
     "imageid": "ubuntu:2004"
