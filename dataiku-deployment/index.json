@@ -18,6 +18,10 @@
         "text": "step-adding-requirements.md"
       },
       {
+        "title": "Testing Locally",
+        "text": "step-testing-locally.md"
+      },
+      {
         "title": "Creating Your Dockerfile",
         "text": "step-creating-dockerfile.md"
       },

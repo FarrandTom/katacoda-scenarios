@@ -33,4 +33,6 @@ Your `predict` method is straightforward. Any exceptions are caught and logged i
 
 Once the request has been created correctly the model is called with `self.model.predict(request)`. The prediction is then transformed into a response which is returned to the user.
 
-You now have added all of the Python which is needed to create your Dataiku deployment. The remainder of this tutorial is focused on testing your work, and creating the final Docker image!
+## Taking Stock
+
+Phew! You have now added all of the Python code which is needed to create your Dataiku deployment. The remainder of this tutorial is focused on testing your work, and creating the final Docker image!
