@@ -24,7 +24,10 @@ from google.cloud import storage
 import numpy as np
 from pypmml import Model
 
+from typing import Dict, List, Union, Iterable
+
 logger = logging.getLogger(__name__)
+
 
 class RandomForest(object):
 
