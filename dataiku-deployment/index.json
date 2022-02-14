@@ -6,12 +6,8 @@
   "details": {
     "steps": [
       {
-        "title": "Setting up Python: Loading the model",
-        "text": "step-loading-model.md"
-      },
-      {
-        "title": "Setting up Python: Adding Predictive Code",
-        "text": "step-adding-predictive-code.md"
+        "title": "Setting up Python: Understanding Your Code",
+        "text": "step-understanding-code.md"
       },
       {
         "title": "Adding Requirements",
@@ -43,7 +39,7 @@
     },
     "assets": {
       "host01": [
-          {"file": "test.txt", "target": "~"}
+          {"file": "RandomForest.py", "target": "~"}
       ]
     }
   },

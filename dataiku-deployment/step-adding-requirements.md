@@ -12,7 +12,7 @@ Next, add the Python packages which have been imported in the `RandomForest.py` 
 
 ```(text)
 numpy
-pymml
+pypmml
 seldon-core
 ```
 
