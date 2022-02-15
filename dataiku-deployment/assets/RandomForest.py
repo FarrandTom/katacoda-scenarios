@@ -34,7 +34,7 @@ class RandomForest(object):
         try:
             request = {"features": dict(zip(names,X))}
             
-            logger.info("Calling predict_proba...")
+            logger.info("Calling predict")
             prediction = self.model.predict(request)
             
             response = {"data": {"names": ["proba_True", "proba_False"], "ndarray": [prediction["proba_True"], prediction["proba_False"]]}}
