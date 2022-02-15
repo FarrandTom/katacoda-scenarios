@@ -20,9 +20,7 @@ class RandomForest(object):
 
         logger.info(f"Model name: {model_path}")
         self.model_path = model_path
-
         self.load_model()
-        self.ready = False
 
     # LOAD MODEL METHOD
     def load_model(self):
@@ -31,14 +29,9 @@ class RandomForest(object):
         blob.download_to_filename('model.pmml')
         self.model = Model.fromFile('model.pmml')
 
-        self.ready = True
-
     # PREDICT METHOD
     def predict(self, X: np.ndarray, names: Iterable[str], meta: Dict = None) -> Union[np.ndarray, List, str, bytes]:
         try:
-            if not self.ready:
-                self.load_model()
-            
             request = {"features": dict(zip(names,X))}
             
             logger.info("Calling predict_proba...")

@@ -26,7 +26,7 @@ You will now see a load of output related to the configuration of your Seldon mo
 
 Select the "+" next to "Terminal" and click on "Open New Terminal". This fresh terminal environment will allow you to use `curl` to send requests which will test your Seldon endpoint.
 
-Custom model servers created using the Seldon tooling currently expect requests to use the Seldon protcol as the request and response schema- you can read more about that (here)[https://docs.seldon.io/projects/seldon-core/en/stable/graph/protocols.html#rest-and-grpc-seldon-protocol]. This is the reason as to why the request body is structured as a dictionary with a top level key of `data` and further entries for `names`, used to describe the feature names, and `ndarray` which contains the data features themselves.
+Custom model servers created using the Seldon tooling currently expect requests to use the Seldon protcol as the request and response schema- you can read more about that [here](https://docs.seldon.io/projects/seldon-core/en/stable/graph/protocols.html#rest-and-grpc-seldon-protocol). This is the reason as to why the request body is structured as a dictionary with a top level key of `data` and further entries for `names`, used to describe the feature names, and `ndarray` which contains the data features themselves.
 
 The `curl` request will use the external `/predictions` endpoint which Seldon automatically exposes over both REST and gRPC to test the underlying `predict` method you created earlier. 
 
