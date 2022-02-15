@@ -14,6 +14,7 @@ Next, add the Python packages which have been imported in the `RandomForest.py` 
 numpy
 pypmml
 seldon-core
+google-cloud-storage
 ```
 
 And that's it! Your Python environment is ready to rock and roll.

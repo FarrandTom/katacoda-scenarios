@@ -1,7 +1,5 @@
 # IMPORTS
 import logging
-
-from io import BytesIO
 from google.cloud import storage
 
 import numpy as np
@@ -23,16 +21,14 @@ class RandomForest(object):
         logger.info(f"Model name: {model_path}")
         self.model_path = model_path
 
-        logger.info("Loading model.")
         self.load_model()
         self.ready = False
 
     # LOAD MODEL METHOD
     def load_model(self):
         logger.info("Loading model")
-        model_file = BytesIO()
-        model_blob = self.bucket.get_blob(f'{self.model_path}')
-        model_blob.download_to_file(model_file)
+        blob = self.bucket.blob(f'{self.model_path}')
+        blob.download_to_filename('high-revenue-prediction.pmml')
         self.model = Model.fromFile('high-revenue-prediction.pmml')
 
         self.ready = True
@@ -41,7 +37,7 @@ class RandomForest(object):
     def predict(self, X: np.ndarray, names: Iterable[str], meta: Dict = None) -> Union[np.ndarray, List, str, bytes]:
         try:
             if not self.ready:
-                self.load()
+                self.load_model()
             
             request = {"features": dict(zip(names,X))}
             

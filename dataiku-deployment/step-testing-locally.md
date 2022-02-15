@@ -17,12 +17,7 @@ pip3 install -r requirements.txt
 Spin up the Seldon server by calling the `seldon-core-microservice` feeding in that you are creating a `MODEL` component, and the `model_path` parameter- where the artefact is stored in the storage bucket. 
 
 ```(bash)
-seldon-core-microservice RandomForest --service-type MODEL
-                                      --parameters='[{ 
-                                                      "name": "model_path",
-                                                      "value": "katacoda-scenarios/dataiku-model/high-revenue-prediction.pmml",
-                                                      "type": "STRING"
-                                                     }]'
+seldon-core-microservice RandomForest --service-type MODEL --parameters='[{ "name": "model_path", "value": "katacoda-scenarios/dataiku-model/high-revenue-prediction.pmml", "type": "STRING"}]'
 ```{{execute}}
 
 You will now see a load of output related to the configuration of your Seldon model server. 
