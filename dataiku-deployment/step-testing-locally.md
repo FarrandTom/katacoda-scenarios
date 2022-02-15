@@ -4,17 +4,9 @@ Now that you have your Python code and `requirements.txt` ready and waiting you 
 
 The `seldon-core-microservice` allows us to test the model server logic locally without having to build the Docker image. This has the advantage of allowing you to quickly iterate in the development of your model server without having to build the Docker image each time.
 
-## Installing Python Packages
+## Spinning up the Seldon Server
 
-To begin with install the necessary Python packages using your recently created `requirements.txt`.
-
-```(python)
-pip3 install -r requirements.txt
-```{{execute}}
-
-##  Spinning up the Seldon Server
-
-Spin up the Seldon server by calling the `seldon-core-microservice` feeding in that you are creating a `MODEL` component, and the `model_path` parameter- where the artefact is stored in the storage bucket. 
+Spin up the Seldon server by calling the `seldon-core-microservice` feeding in that you are creating a `MODEL` component, and the `model_path` parameter- where the artefact is stored in the storage bucket.
 
 ```(bash)
 seldon-core-microservice RandomForest \
@@ -82,4 +74,8 @@ The sample model in this instance performing a binary classification between whe
 {"jsonData":{"data":{"names":["proba_True","proba_False"],"ndarray":[0.25793427065155805,0.742065729348442]}},"meta":{}}
 ```
 
-Before you move on you should stop the model server running locally, return to the original terminal window and use CTRL+C to stop the server.
+Before you move on you should stop the model server running locally, return to the original terminal window and use CTRL+C to stop the server. Finally, deactivate your Python virtual environment:
+
+```(bash)
+deactivate
+```{{exeucte}}

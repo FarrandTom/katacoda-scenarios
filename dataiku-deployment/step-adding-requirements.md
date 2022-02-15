@@ -17,4 +17,31 @@ seldon-core
 google-cloud-storage
 ```
 
-And that's it! Your Python environment is ready to rock and roll.
+## Creating the Virtual Environment
+
+As per best practices you will use a virtual environment to setup the Python dependencies needed for the local testing of your Dataiku model deployment.
+
+Start by installing the virtual env manager:
+
+```(bash)
+apt install python3.8-venv
+```{{execute}}
+
+Next create a new `venv` in your current directory: 
+
+```(bash)
+python3 -m venv .
+```{{execute}}
+
+Finally activate the environment: 
+```(bash)
+source ./bin/activate
+```{{execute}}
+
+## Installing Python Packages
+
+You can now install the necessary Python packages using your recently created `requirements.txt`.
+
+```(python)
+pip3 install -r requirements.txt
+```{{execute}}
