@@ -1,31 +1,24 @@
-# New Scenario Template (Your Title Here)
+# Introduction
 
-This is a mostly empty template. To create your own first scenario, duplicate this in your own repo, then modify it as needed.
+In this tutorial you will learn how to wrap a Dataiku generated model artefact into a high performance Seldon inference server.
 
 ## Description
 
-2-3 sentences on what the scenario covers, illustrates, and teaches. What technology is used, and what task will the learner have accomplished by the end?
+Seldon provides [reusable pre-built servers](https://docs.seldon.io/projects/seldon-core/en/stable/nav/config/servers.html) for popular machine learning frameworks (Scikit-learn, XGBoost, Tensorflow, MLFlow, Triton) which only need a saved model artefact to get going with.
 
-Importantly, why does this matter? What can this technology, tool, or approach help you accomplish? Briefly communicate the real-world application(s) of this skill.
+On top of this Seldon provides the tools to create your own custom reusable container images for high performance machine learning serving.
 
-## Learning Objective
+This tutorial walks you through this process, focusing on a pre-trained Dataiku model artefact. Developing your own reusable model servers reduces engineering effort drastically, by allowing you to skip the container build stage in the future and simply supply the saved model artefact!
 
-- 3-4 bullets
-- of what you
-- will learn
+## Workflow
 
-## Prerequisite Skills
+This tutorial will follow the below workflow:
 
-Define the target audience here, and list any prerequisite skills. For example:
+1. **Understanding the Python Code:** You will get to grips with the Python code which will be used to load the model and handle requests when deployed.
+2. **Adding Requirements:** Defining the Python dependencies needed to run the model.
+3. **Testing Locally:** Ensuring that the code of your deployment so far is correct before building the Docker image.
+4. **Creating Your Dockerfile:** Specifying how you would like the Docker image to be built.
+5. **Building Your Model Image:** Creating the Docker image.
+6. **Deploying Onto Seldon:** Pushing your model server onto the Seldon platform to serve requests.
 
-This is for software developers with prior experience using Jenkins to deploy web applications.
-
-## Table of Contents
-
-If the scenario is part of a set of related scenarios, the table of contents will appear here as a bulleted list of all the scenario titles, with links to each other.
-
-- Scenario A
-- Scenario B
-- Scenario C
-
-
+Time to get cracking!

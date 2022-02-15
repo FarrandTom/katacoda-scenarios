@@ -79,3 +79,5 @@ Before you move on you should stop the model server running locally, return to t
 ```(bash)
 deactivate
 ```{{exeucte}}
+
+Time to focus on building the container image!
