@@ -28,8 +28,8 @@ class RandomForest(object):
     def load_model(self):
         logger.info("Loading model")
         blob = self.bucket.blob(f'{self.model_path}')
-        blob.download_to_filename('high-revenue-prediction.pmml')
-        self.model = Model.fromFile('high-revenue-prediction.pmml')
+        blob.download_to_filename('model.pmml')
+        self.model = Model.fromFile('model.pmml')
 
         self.ready = True
 
