@@ -2,7 +2,7 @@
 
 Now that you have tested your deployment locally it is time to being preparing to wrap it as a Docker container- ready for production!
 
-Seldon exposes two avenues for creating Docker images, the first is to use `source-2-image` tooling which removes the need for model builders to write a Dockerfile, and creates a new image directly from the Seldon provided base images. You can find more information about that process here.
+Seldon exposes two avenues for creating Docker images, the first is to use `source-2-image` tooling which removes the need for model builders to write a Dockerfile, and creates a new image directly from the Seldon provided base images. You can find more information about that process [here](https://docs.seldon.io/projects/seldon-core/en/stable/python/python_wrapping_s2i.html).
 
 In this case, you will add the Dockerfile directly. This is because `PyPMML` has a Java dependency and thus the fine grained control provided by the Dockerfile approach means that you can specifiy the inclusion of Java.
 
