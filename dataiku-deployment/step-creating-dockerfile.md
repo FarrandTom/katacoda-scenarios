@@ -18,7 +18,7 @@ Then fill in the following details to outline how you would like your Seldon mod
 
 ```(docker)
 FROM openjdk:11
-COPY --from=python:3.7-slim / /
+COPY --from=python:3.8-slim / /
 WORKDIR /app
 
 # Install python packages

@@ -5,6 +5,7 @@ The penultimate stage in the process is to build and push your container image.
 All of the component pieces are now in place to ensure this is a smooth process. You simply have to run:
 
 ```(bash)
+apt-get update
 docker build . -t dataiku-example:0.1
 ```{{execute}}
 

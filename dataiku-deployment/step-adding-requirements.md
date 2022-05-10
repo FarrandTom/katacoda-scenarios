@@ -15,6 +15,7 @@ numpy
 pypmml
 seldon-core
 google-cloud-storage
+werkzeug==2.0.3
 ```
 
 ## Creating the Virtual Environment
